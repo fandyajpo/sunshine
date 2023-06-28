@@ -10,16 +10,18 @@ const BroadcastChannelExample = () => {
     broadcastChannel.onmessage = (event) => {
       setMessage(event.data);
     };
-
+    // @ts-ignore
     setChannel(broadcastChannel);
 
     return () => {
       broadcastChannel.close();
     };
-  }, []);
+    // @ts-ignore
+  }, [broadcastChannel]);
 
   const sendMessage = () => {
     if (channel) {
+      // @ts-ignore
       channel.postMessage("Hello from React!");
     }
   };
