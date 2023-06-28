@@ -17,7 +17,7 @@ const BroadcastChannelExample = () => {
       broadcastChannel.close();
     };
     // @ts-ignore
-  }, [broadcastChannel]);
+  }, []);
 
   const sendMessage = () => {
     if (channel) {
