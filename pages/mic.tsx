@@ -24,6 +24,7 @@ const A = () => {
 
   return (
     <div className="bg-red-500 w-full h-screen">
+      {/* @ts-ignore */}
       {message?.text}
       <AudioRecorder
         onRecordingComplete={addAudioElement}
