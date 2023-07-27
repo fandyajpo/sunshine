@@ -23,7 +23,7 @@ const A = () => {
   };
 
   return (
-    <div className="bg-red-500 w-full h-screen">
+    <div className="bg-red-500 w-full h-screen flex items-center justify-center">
       {/* @ts-ignore */}
       {message?.text}
       <AudioRecorder

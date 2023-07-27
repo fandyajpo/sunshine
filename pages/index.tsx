@@ -48,15 +48,15 @@ import React, { useEffect } from "react";
 
 function App() {
   const router = useRouter();
-  useEffect(() => {
-    const openMultipleTabs = () => {
-      setTimeout(() => {
-        window.open(router.pathname, "_blank");
-      }, 100); // Delay between each tab in milliseconds (e.g., 500ms)
-    };
+  // useEffect(() => {
+  //   const openMultipleTabs = () => {
+  //     setTimeout(() => {
+  //       window.open(router.pathname, "_blank");
+  //     }, 100); // Delay between each tab in milliseconds (e.g., 500ms)
+  //   };
 
-    openMultipleTabs();
-  }, []);
+  //   openMultipleTabs();
+  // }, []);
 
   return (
     <div>
